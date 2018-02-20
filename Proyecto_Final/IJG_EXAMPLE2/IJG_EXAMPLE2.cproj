@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC32.C</ToolchainName>
+    <ProjectGuid>{e1cb01a0-7cc2-4d1e-b657-3cc1b5675974}</ProjectGuid>
+    <avrdevice>AT32UC3A0512</avrdevice>
+    <avrdeviceseries>uc3a</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>IJG_EXAMPLE2</AssemblyName>
+    <Name>IJG_EXAMPLE2</Name>
+    <RootNamespace>IJG_EXAMPLE2</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+  <options>
+    <option id="avr32.components.display.et024006dhu" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.components.memory.sdram.mt48lc16m16a2tg7e" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.components.memory.sd_mmc.sd_mmc_spi" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.adc" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.cpu.cycle_counter" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.flashc" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.gpio" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.intc" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.pm" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.pwm" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.spi" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.tc" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.services.fs.fat" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.utils.print_funcs" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.delay" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.services.graphics.codec.jpg.ijg" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.drivers.ebi.sdramc" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="avr32.services.graphics.ijg.example" value="Add" config="" content-id="Atmel.ASF" />
+  </options>
+  <configurations>
+    <configuration key="config.avr32.utils.gccstartup" value="no" default="no" content-id="Atmel.ASF" />
+    <configuration key="config.compiler.iarew32.heap_size" value="0x1FFFFFF" default="0x1FFFFFF" content-id="Atmel.ASF" />
+    <configuration key="config.compiler.iarew32.app_stack_size" value="0x0000" default="0x0000" content-id="Atmel.ASF" />
+    <configuration key="config.compiler.avr32gcc.use_startfiles" value="no" default="no" content-id="Atmel.ASF" />
+    <configuration key="config.compiler.iarew32.dlib" value="full" default="full" content-id="Atmel.ASF" />
+    <configuration key="config.compiler.iarew32.sys_stack_size" value="0x1000" default="0x1000" content-id="Atmel.ASF" />
+    <configuration key="config.board.evk1105.init" value="no" default="no" content-id="Atmel.ASF" />
+    <configuration key="config.avr32.utils.trampoline" value="yes" default="yes" content-id="Atmel.ASF" />
+    <configuration key="config.utils.interrupt.intc" value="yes" default="yes" content-id="Atmel.ASF" />
+    <configuration key="config.avr32.drivers.intc.exception" value="yes" default="yes" content-id="Atmel.ASF" />
+  </configurations>
+  <files>
+    <file path="src/ASF/avr32/boards/evk1105/evk1105.h" framework="" version="" source="avr32/boards/evk1105/evk1105.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/boards/evk1105/led.c" framework="" version="" source="avr32/boards/evk1105/led.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/boards/evk1105/led.h" framework="" version="" source="avr32/boards/evk1105/led.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/display/et024006dhu/et024006dhu.c" framework="" version="" source="avr32/components/display/et024006dhu/et024006dhu.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/display/et024006dhu/et024006dhu.h" framework="" version="" source="avr32/components/display/et024006dhu/et024006dhu.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/display/et024006dhu/smc_et024006dhu.h" framework="" version="" source="avr32/components/display/et024006dhu/smc_et024006dhu.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/memory/sdram/mt48lc16m16a2tg7e/mt48lc16m16a2tg7e.h" framework="" version="" source="avr32/components/memory/sdram/mt48lc16m16a2tg7e/mt48lc16m16a2tg7e.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/cpu/cycle_counter/cycle_counter.h" framework="" version="" source="avr32/drivers/cpu/cycle_counter/cycle_counter.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/ebi/sdramc/sdramc.c" framework="" version="" source="avr32/drivers/ebi/sdramc/sdramc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/ebi/sdramc/sdramc.h" framework="" version="" source="avr32/drivers/ebi/sdramc/sdramc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/ebi/smc/smc.c" framework="" version="" source="avr32/drivers/ebi/smc/smc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/ebi/smc/smc.h" framework="" version="" source="avr32/drivers/ebi/smc/smc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/flashc/flashc.c" framework="" version="" source="avr32/drivers/flashc/flashc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/flashc/flashc.h" framework="" version="" source="avr32/drivers/flashc/flashc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/gpio/gpio.c" framework="" version="" source="avr32/drivers/gpio/gpio.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/gpio/gpio.h" framework="" version="" source="avr32/drivers/gpio/gpio.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/intc/exception.S" framework="" version="" source="avr32/drivers/intc/exception.S" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/intc/intc.c" framework="" version="" source="avr32/drivers/intc/intc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/intc/intc.h" framework="" version="" source="avr32/drivers/intc/intc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pm/pm.c" framework="" version="" source="avr32/drivers/pm/pm.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pm/pm.h" framework="" version="" source="avr32/drivers/pm/pm.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pm/pm_conf_clocks.c" framework="" version="" source="avr32/drivers/pm/pm_conf_clocks.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pm/power_clocks_lib.c" framework="" version="" source="avr32/drivers/pm/power_clocks_lib.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pm/power_clocks_lib.h" framework="" version="" source="avr32/drivers/pm/power_clocks_lib.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pm/sleep.h" framework="" version="" source="avr32/drivers/pm/sleep.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pwm/pwm.c" framework="" version="" source="avr32/drivers/pwm/pwm.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/pwm/pwm.h" framework="" version="" source="avr32/drivers/pwm/pwm.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/usart/usart.c" framework="" version="" source="avr32/drivers/usart/usart.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/usart/usart.h" framework="" version="" source="avr32/drivers/usart/usart.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/compiler.h" framework="" version="" source="avr32/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/debug/print_funcs.c" framework="" version="" source="avr32/utils/debug/print_funcs.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/debug/print_funcs.h" framework="" version="" source="avr32/utils/debug/print_funcs.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/header_files/uc3d_defines_fix.h" framework="" version="" source="avr32/utils/header_files/uc3d_defines_fix.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/header_files/uc3l3_l4_defines_fix.h" framework="" version="" source="avr32/utils/header_files/uc3l3_l4_defines_fix.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/make/Makefile.avr32.in" framework="" version="" source="avr32/utils/make/Makefile.avr32.in" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/make/Makefile.avr32program.in" framework="" version="" source="avr32/utils/make/Makefile.avr32program.in" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/make/Makefile.batchisp.in" framework="" version="" source="avr32/utils/make/Makefile.batchisp.in" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/preprocessor/mrepeat.h" framework="" version="" source="avr32/utils/preprocessor/mrepeat.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/preprocessor/preprocessor.h" framework="" version="" source="avr32/utils/preprocessor/preprocessor.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/preprocessor/stringz.h" framework="" version="" source="avr32/utils/preprocessor/stringz.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/preprocessor/tpaste.h" framework="" version="" source="avr32/utils/preprocessor/tpaste.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/startup/trampoline_uc3.S" framework="" version="" source="avr32/utils/startup/trampoline_uc3.S" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/startup/trampoline_uc3.h" framework="" version="" source="avr32/utils/startup/trampoline_uc3.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/utils/status_codes.h" framework="" version="" source="avr32/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/boards/board.h" framework="" version="" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/genclk.h" framework="" version="" source="common/services/clock/genclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/osc.h" framework="" version="" source="common/services/clock/osc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/pll.h" framework="" version="" source="common/services/clock/pll.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/sysclk.h" framework="" version="" source="common/services/clock/sysclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/uc3a0_a1/genclk.h" framework="" version="" source="common/services/clock/uc3a0_a1/genclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/uc3a0_a1/osc.h" framework="" version="" source="common/services/clock/uc3a0_a1/osc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/uc3a0_a1/pll.h" framework="" version="" source="common/services/clock/uc3a0_a1/pll.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/uc3a0_a1/sysclk.c" framework="" version="" source="common/services/clock/uc3a0_a1/sysclk.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/uc3a0_a1/sysclk.h" framework="" version="" source="common/services/clock/uc3a0_a1/sysclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/delay/delay.h" framework="" version="" source="common/services/delay/delay.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/interrupt.h" framework="" version="" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/interrupt/interrupt_avr32.h" framework="" version="" source="common/utils/interrupt/interrupt_avr32.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/parts.h" framework="" version="" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/Makefile" framework="" version="" source="thirdparty/ijg/Makefile" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/README" framework="" version="" source="thirdparty/ijg/README" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/ansi2knr.1" framework="" version="" source="thirdparty/ijg/ansi2knr.1" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/cderror.h" framework="" version="" source="thirdparty/ijg/cderror.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/cdjpeg.h" framework="" version="" source="thirdparty/ijg/cdjpeg.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/change.log" framework="" version="" source="thirdparty/ijg/change.log" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/cjpeg.1" framework="" version="" source="thirdparty/ijg/cjpeg.1" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/coderules.doc" framework="" version="" source="thirdparty/ijg/coderules.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/config.guess" framework="" version="" source="thirdparty/ijg/config.guess" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/config.sub" framework="" version="" source="thirdparty/ijg/config.sub" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/configure" framework="" version="" source="thirdparty/ijg/configure" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/djpeg.1" framework="" version="" source="thirdparty/ijg/djpeg.1" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/docsrc/documentation.h" framework="" version="" source="thirdparty/ijg/docsrc/documentation.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/example/at32uc3a0512_evk1105/link_uc3a0512_extsdram.lds" framework="" version="" source="thirdparty/ijg/example/at32uc3a0512_evk1105/link_uc3a0512_extsdram.lds" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_clock.h" framework="" version="" source="thirdparty/ijg/example/conf_clock.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_ebi.h" framework="" version="" source="thirdparty/ijg/example/conf_ebi.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_et024006dhu.h" framework="" version="" source="thirdparty/ijg/example/conf_et024006dhu.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/conf_jpeg_decoder.h" framework="" version="" source="thirdparty/ijg/example/conf_jpeg_decoder.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/example/crt0.S" framework="" version="" source="thirdparty/ijg/example/crt0.S" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ijg_example.c" framework="" version="" source="thirdparty/ijg/example/ijg_example.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/jdatasrc.c" framework="" version="" source="thirdparty/ijg/example/jdatasrc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/jpeg_decoder.h" framework="" version="" source="thirdparty/ijg/example/jpeg_decoder.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/jpegfile.h" framework="" version="" source="thirdparty/ijg/example/jpegfile.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/filelist.doc" framework="" version="" source="thirdparty/ijg/filelist.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/install-sh" framework="" version="" source="thirdparty/ijg/install-sh" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/install.doc" framework="" version="" source="thirdparty/ijg/install.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcapistd.c" framework="" version="" source="thirdparty/ijg/jcapistd.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jccoefct.c" framework="" version="" source="thirdparty/ijg/jccoefct.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jccolor.c" framework="" version="" source="thirdparty/ijg/jccolor.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcdctmgr.c" framework="" version="" source="thirdparty/ijg/jcdctmgr.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jchuff.c" framework="" version="" source="thirdparty/ijg/jchuff.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jchuff.h" framework="" version="" source="thirdparty/ijg/jchuff.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcinit.c" framework="" version="" source="thirdparty/ijg/jcinit.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcmainct.c" framework="" version="" source="thirdparty/ijg/jcmainct.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcmarker.c" framework="" version="" source="thirdparty/ijg/jcmarker.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcmaster.c" framework="" version="" source="thirdparty/ijg/jcmaster.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcomapi.c" framework="" version="" source="thirdparty/ijg/jcomapi.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.bcc" framework="" version="" source="thirdparty/ijg/jconfig.bcc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.cfg" framework="" version="" source="thirdparty/ijg/jconfig.cfg" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.dj" framework="" version="" source="thirdparty/ijg/jconfig.dj" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.doc" framework="" version="" source="thirdparty/ijg/jconfig.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.h" framework="" version="" source="thirdparty/ijg/jconfig.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.mac" framework="" version="" source="thirdparty/ijg/jconfig.mac" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.manx" framework="" version="" source="thirdparty/ijg/jconfig.manx" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.mc6" framework="" version="" source="thirdparty/ijg/jconfig.mc6" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.sas" framework="" version="" source="thirdparty/ijg/jconfig.sas" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.st" framework="" version="" source="thirdparty/ijg/jconfig.st" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.vc" framework="" version="" source="thirdparty/ijg/jconfig.vc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.vms" framework="" version="" source="thirdparty/ijg/jconfig.vms" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jconfig.wat" framework="" version="" source="thirdparty/ijg/jconfig.wat" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcparam.c" framework="" version="" source="thirdparty/ijg/jcparam.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcphuff.c" framework="" version="" source="thirdparty/ijg/jcphuff.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcprepct.c" framework="" version="" source="thirdparty/ijg/jcprepct.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jcsample.c" framework="" version="" source="thirdparty/ijg/jcsample.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jctrans.c" framework="" version="" source="thirdparty/ijg/jctrans.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdapimin.c" framework="" version="" source="thirdparty/ijg/jdapimin.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdapistd.c" framework="" version="" source="thirdparty/ijg/jdapistd.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdcoefct.c" framework="" version="" source="thirdparty/ijg/jdcoefct.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdcolor.c" framework="" version="" source="thirdparty/ijg/jdcolor.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdct.h" framework="" version="" source="thirdparty/ijg/jdct.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jddctmgr.c" framework="" version="" source="thirdparty/ijg/jddctmgr.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdhuff.c" framework="" version="" source="thirdparty/ijg/jdhuff.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdhuff.h" framework="" version="" source="thirdparty/ijg/jdhuff.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdinput.c" framework="" version="" source="thirdparty/ijg/jdinput.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdmainct.c" framework="" version="" source="thirdparty/ijg/jdmainct.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdmarker.c" framework="" version="" source="thirdparty/ijg/jdmarker.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdmaster.c" framework="" version="" source="thirdparty/ijg/jdmaster.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdmerge.c" framework="" version="" source="thirdparty/ijg/jdmerge.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdphuff.c" framework="" version="" source="thirdparty/ijg/jdphuff.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdpostct.c" framework="" version="" source="thirdparty/ijg/jdpostct.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdsample.c" framework="" version="" source="thirdparty/ijg/jdsample.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jdtrans.c" framework="" version="" source="thirdparty/ijg/jdtrans.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jerror.c" framework="" version="" source="thirdparty/ijg/jerror.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jerror.h" framework="" version="" source="thirdparty/ijg/jerror.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jfdctflt.c" framework="" version="" source="thirdparty/ijg/jfdctflt.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jfdctfst.c" framework="" version="" source="thirdparty/ijg/jfdctfst.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jfdctint.c" framework="" version="" source="thirdparty/ijg/jfdctint.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jidctflt.c" framework="" version="" source="thirdparty/ijg/jidctflt.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jidctfst.c" framework="" version="" source="thirdparty/ijg/jidctfst.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jidctint.c" framework="" version="" source="thirdparty/ijg/jidctint.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jidctred.c" framework="" version="" source="thirdparty/ijg/jidctred.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jinclude.h" framework="" version="" source="thirdparty/ijg/jinclude.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jmemdosa.asm" framework="" version="" source="thirdparty/ijg/jmemdosa.asm" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jmemmgr.c" framework="" version="" source="thirdparty/ijg/jmemmgr.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jmemnobs.c" framework="" version="" source="thirdparty/ijg/jmemnobs.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jmemsys.h" framework="" version="" source="thirdparty/ijg/jmemsys.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jmorecfg.h" framework="" version="" source="thirdparty/ijg/jmorecfg.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jpegint.h" framework="" version="" source="thirdparty/ijg/jpegint.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jpeglib.h" framework="" version="" source="thirdparty/ijg/jpeglib.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jpegtran.1" framework="" version="" source="thirdparty/ijg/jpegtran.1" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jquant1.c" framework="" version="" source="thirdparty/ijg/jquant1.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jquant2.c" framework="" version="" source="thirdparty/ijg/jquant2.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jutils.c" framework="" version="" source="thirdparty/ijg/jutils.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/jversion.h" framework="" version="" source="thirdparty/ijg/jversion.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/libjpeg.doc" framework="" version="" source="thirdparty/ijg/libjpeg.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/license.txt" framework="" version="" source="thirdparty/ijg/license.txt" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/ltconfig" framework="" version="" source="thirdparty/ijg/ltconfig" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/ltmain.sh" framework="" version="" source="thirdparty/ijg/ltmain.sh" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makcjpeg.st" framework="" version="" source="thirdparty/ijg/makcjpeg.st" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makdjpeg.st" framework="" version="" source="thirdparty/ijg/makdjpeg.st" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makeapps.ds" framework="" version="" source="thirdparty/ijg/makeapps.ds" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.ansi" framework="" version="" source="thirdparty/ijg/makefile.ansi" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.bcc" framework="" version="" source="thirdparty/ijg/makefile.bcc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.cfg" framework="" version="" source="thirdparty/ijg/makefile.cfg" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.dj" framework="" version="" source="thirdparty/ijg/makefile.dj" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.manx" framework="" version="" source="thirdparty/ijg/makefile.manx" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.mc6" framework="" version="" source="thirdparty/ijg/makefile.mc6" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.mms" framework="" version="" source="thirdparty/ijg/makefile.mms" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.sas" framework="" version="" source="thirdparty/ijg/makefile.sas" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.unix" framework="" version="" source="thirdparty/ijg/makefile.unix" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.vc" framework="" version="" source="thirdparty/ijg/makefile.vc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.vms" framework="" version="" source="thirdparty/ijg/makefile.vms" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makefile.wat" framework="" version="" source="thirdparty/ijg/makefile.wat" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makelib.ds" framework="" version="" source="thirdparty/ijg/makelib.ds" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makeproj.mac" framework="" version="" source="thirdparty/ijg/makeproj.mac" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makljpeg.st" framework="" version="" source="thirdparty/ijg/makljpeg.st" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/maktjpeg.st" framework="" version="" source="thirdparty/ijg/maktjpeg.st" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/makvms.opt" framework="" version="" source="thirdparty/ijg/makvms.opt" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/rdjpgcom.1" framework="" version="" source="thirdparty/ijg/rdjpgcom.1" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/structure.doc" framework="" version="" source="thirdparty/ijg/structure.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/transupp.h" framework="" version="" source="thirdparty/ijg/transupp.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/usage.doc" framework="" version="" source="thirdparty/ijg/usage.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/wizard.doc" framework="" version="" source="thirdparty/ijg/wizard.doc" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/thirdparty/ijg/wrjpgcom.1" framework="" version="" source="thirdparty/ijg/wrjpgcom.1" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi/sd_mmc_spi_mem.c" framework="" version="3.29.0" source="avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi_mem.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi/sd_mmc_spi.c" framework="" version="3.29.0" source="avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi/sd_mmc_spi_mem.h" framework="" version="3.29.0" source="avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi_mem.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi/sd_mmc_spi.h" framework="" version="3.29.0" source="avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/Config/conf_sd_mmc_spi.h" framework="" version="3.29.0" source="avr32\components\memory\sd_mmc\sd_mmc_spi\module_config\conf_sd_mmc_spi.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/spi/spi.c" framework="" version="3.29.0" source="avr32\drivers\spi\spi.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/spi/spi.h" framework="" version="3.29.0" source="avr32\drivers\spi\spi.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/fat_unusual.c" framework="" version="3.29.0" source="avr32\services\fs\fat\fat_unusual.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/fat.c" framework="" version="3.29.0" source="avr32\services\fs\fat\fat.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/file.c" framework="" version="3.29.0" source="avr32\services\fs\fat\file.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/navigation.c" framework="" version="3.29.0" source="avr32\services\fs\fat\navigation.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/file.h" framework="" version="3.29.0" source="avr32\services\fs\fat\file.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/fs_com.h" framework="" version="3.29.0" source="avr32\services\fs\fat\fs_com.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/navigation.h" framework="" version="3.29.0" source="avr32\services\fs\fat\navigation.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/services/fs/fat/fat.h" framework="" version="3.29.0" source="avr32\services\fs\fat\fat.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/Config/conf_explorer.h" framework="" version="3.29.0" source="avr32\services\fs\fat\module_config\conf_explorer.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/storage/ctrl_access/ctrl_access.c" framework="" version="3.29.0" source="common\services\storage\ctrl_access\ctrl_access.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/storage/ctrl_access/ctrl_access.h" framework="" version="3.29.0" source="common\services\storage\ctrl_access\ctrl_access.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/Config/conf_access.h" framework="" version="3.29.0" source="common\services\storage\ctrl_access\module_config\conf_access.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/adc/adc.c" framework="" version="3.29.0" source="avr32\drivers\adc\adc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/adc/adc.h" framework="" version="3.29.0" source="avr32\drivers\adc\adc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/tc/tc.c" framework="" version="3.29.0" source="avr32\drivers\tc\tc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/avr32/drivers/tc/tc.h" framework="" version="3.29.0" source="avr32\drivers\tc\tc.h" changed="False" content-id="Atmel.ASF" />
+  </files>
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.29.0" />
+  </dependencies>
+  <project id="avr32.services.graphics.ijg.example.evk1105" value="Add" config="" content-id="Atmel.ASF" />
+  <board id="board.evk1105" value="Add" config="" content-id="Atmel.ASF" />
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <Avr32Gcc>
+  <avr32gcc.common.outputfiles.hex>True</avr32gcc.common.outputfiles.hex>
+  <avr32gcc.common.outputfiles.lss>True</avr32gcc.common.outputfiles.lss>
+  <avr32gcc.common.outputfiles.eep>True</avr32gcc.common.outputfiles.eep>
+  <avr32gcc.common.outputfiles.srec>True</avr32gcc.common.outputfiles.srec>
+  <avr32gcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>BOARD=EVK1105</Value>
+      <Value>SD_MMC_SPI_ENABLE</Value>
+      <Value>ACCESS_MEM_TO_RAM_ENABLED</Value>
+    </ListValues>
+  </avr32gcc.compiler.symbols.DefSymbols>
+  <avr32gcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../thirdparty/ijg/example</Value>
+      <Value>../src/ASF/avr32/utils</Value>
+      <Value>../src/ASF/avr32/drivers/cpu/cycle_counter</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/avr32/drivers/pwm</Value>
+      <Value>../src/ASF/avr32/boards</Value>
+      <Value>../src/ASF/avr32/components/display/et024006dhu</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/avr32/drivers/flashc</Value>
+      <Value>../src/ASF/thirdparty/ijg</Value>
+      <Value>../src/config</Value>
+      <Value>../src/ASF/avr32/boards/evk1105</Value>
+      <Value>../src/ASF/avr32/utils/debug</Value>
+      <Value>../src/ASF/avr32/components/memory/sdram</Value>
+      <Value>../src</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/smc</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/sdramc</Value>
+      <Value>../src/ASF/avr32/drivers/gpio</Value>
+      <Value>../src/ASF/avr32/utils/preprocessor</Value>
+      <Value>../src/ASF/avr32/drivers/intc</Value>
+      <Value>../src/ASF/avr32/drivers/pm</Value>
+      <Value>../src/ASF/avr32/drivers/usart</Value>
+      <Value>../src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi</Value>
+      <Value>../src/ASF/avr32/drivers/spi</Value>
+      <Value>../src/ASF/avr32/services/fs/fat</Value>
+      <Value>../src/ASF/common/services/storage/ctrl_access</Value>
+      <Value>../src/ASF/avr32/drivers/adc</Value>
+      <Value>../src/ASF/avr32/drivers/tc</Value>
+    </ListValues>
+  </avr32gcc.compiler.directories.IncludePaths>
+  <avr32gcc.compiler.optimization.level>Optimize for size (-Os)</avr32gcc.compiler.optimization.level>
+  <avr32gcc.compiler.optimization.OtherFlags>-fdata-sections</avr32gcc.compiler.optimization.OtherFlags>
+  <avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>
+  <avr32gcc.compiler.warnings.AllWarnings>True</avr32gcc.compiler.warnings.AllWarnings>
+  <avr32gcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax -mno-cond-exec-before-reload</avr32gcc.compiler.miscellaneous.OtherFlags>
+  <avr32gcc.linker.general.DoNotUseStandardStartFiles>True</avr32gcc.linker.general.DoNotUseStandardStartFiles>
+  <avr32gcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avr32gcc.linker.libraries.Libraries>
+  <avr32gcc.linker.optimization.GarbageCollectUnusedSections>True</avr32gcc.linker.optimization.GarbageCollectUnusedSections>
+  <avr32gcc.linker.optimization.PutReadOnlyDataInWritableDataSection>True</avr32gcc.linker.optimization.PutReadOnlyDataInWritableDataSection>
+  <avr32gcc.linker.optimization.AllowDirectReferencesToDataSection>True</avr32gcc.linker.optimization.AllowDirectReferencesToDataSection>
+  <avr32gcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -T../src/ASF/thirdparty/ijg/example/at32uc3a0512_evk1105/link_uc3a0512_extsdram.lds -Wl,-e,_trampoline</avr32gcc.linker.miscellaneous.LinkerFlags>
+  <avr32gcc.assembler.general.AssemblerFlags>-mrelax</avr32gcc.assembler.general.AssemblerFlags>
+  <avr32gcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>../thirdparty/ijg/example</Value>
+      <Value>../src/ASF/avr32/utils</Value>
+      <Value>../src/ASF/avr32/drivers/cpu/cycle_counter</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/avr32/drivers/pwm</Value>
+      <Value>../src/ASF/avr32/boards</Value>
+      <Value>../src/ASF/avr32/components/display/et024006dhu</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/avr32/drivers/flashc</Value>
+      <Value>../src/ASF/thirdparty/ijg</Value>
+      <Value>../src/config</Value>
+      <Value>../src/ASF/avr32/boards/evk1105</Value>
+      <Value>../src/ASF/avr32/utils/debug</Value>
+      <Value>../src/ASF/avr32/components/memory/sdram</Value>
+      <Value>../src</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/smc</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/sdramc</Value>
+      <Value>../src/ASF/avr32/drivers/gpio</Value>
+      <Value>../src/ASF/avr32/utils/preprocessor</Value>
+      <Value>../src/ASF/avr32/drivers/intc</Value>
+      <Value>../src/ASF/avr32/drivers/pm</Value>
+      <Value>../src/ASF/avr32/drivers/usart</Value>
+      <Value>../src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi</Value>
+      <Value>../src/ASF/avr32/drivers/spi</Value>
+      <Value>../src/ASF/avr32/services/fs/fat</Value>
+      <Value>../src/ASF/common/services/storage/ctrl_access</Value>
+      <Value>../src/ASF/avr32/drivers/adc</Value>
+      <Value>../src/ASF/avr32/drivers/tc</Value>
+    </ListValues>
+  </avr32gcc.assembler.general.IncludePaths>
+  <avr32gcc.preprocessingassembler.general.AssemblerFlags>-mrelax -DBOARD=EVK1105 -DSD_MMC_SPI_ENABLE -DACCESS_MEM_TO_RAM_ENABLED</avr32gcc.preprocessingassembler.general.AssemblerFlags>
+  <avr32gcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>../thirdparty/ijg/example</Value>
+      <Value>../src/ASF/avr32/utils</Value>
+      <Value>../src/ASF/avr32/drivers/cpu/cycle_counter</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/avr32/drivers/pwm</Value>
+      <Value>../src/ASF/avr32/boards</Value>
+      <Value>../src/ASF/avr32/components/display/et024006dhu</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/avr32/drivers/flashc</Value>
+      <Value>../src/ASF/thirdparty/ijg</Value>
+      <Value>../src/config</Value>
+      <Value>../src/ASF/avr32/boards/evk1105</Value>
+      <Value>../src/ASF/avr32/utils/debug</Value>
+      <Value>../src/ASF/avr32/components/memory/sdram</Value>
+      <Value>../src</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/smc</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/sdramc</Value>
+      <Value>../src/ASF/avr32/drivers/gpio</Value>
+      <Value>../src/ASF/avr32/utils/preprocessor</Value>
+      <Value>../src/ASF/avr32/drivers/intc</Value>
+      <Value>../src/ASF/avr32/drivers/pm</Value>
+      <Value>../src/ASF/avr32/drivers/usart</Value>
+      <Value>../src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi</Value>
+      <Value>../src/ASF/avr32/drivers/spi</Value>
+      <Value>../src/ASF/avr32/services/fs/fat</Value>
+      <Value>../src/ASF/common/services/storage/ctrl_access</Value>
+      <Value>../src/ASF/avr32/drivers/adc</Value>
+      <Value>../src/ASF/avr32/drivers/tc</Value>
+    </ListValues>
+  </avr32gcc.preprocessingassembler.general.IncludePaths>
+</Avr32Gcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <Avr32Gcc>
+  <avr32gcc.common.outputfiles.hex>True</avr32gcc.common.outputfiles.hex>
+  <avr32gcc.common.outputfiles.lss>True</avr32gcc.common.outputfiles.lss>
+  <avr32gcc.common.outputfiles.eep>True</avr32gcc.common.outputfiles.eep>
+  <avr32gcc.common.outputfiles.srec>True</avr32gcc.common.outputfiles.srec>
+  <avr32gcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>BOARD=EVK1105</Value>
+      <Value>SD_MMC_SPI_ENABLE</Value>
+      <Value>ACCESS_MEM_TO_RAM_ENABLED</Value>
+    </ListValues>
+  </avr32gcc.compiler.symbols.DefSymbols>
+  <avr32gcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../thirdparty/ijg/example</Value>
+      <Value>../src/ASF/avr32/utils</Value>
+      <Value>../src/ASF/avr32/drivers/cpu/cycle_counter</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/avr32/drivers/pwm</Value>
+      <Value>../src/ASF/avr32/boards</Value>
+      <Value>../src/ASF/avr32/components/display/et024006dhu</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/avr32/drivers/flashc</Value>
+      <Value>../src/ASF/thirdparty/ijg</Value>
+      <Value>../src/config</Value>
+      <Value>../src/ASF/avr32/boards/evk1105</Value>
+      <Value>../src/ASF/avr32/utils/debug</Value>
+      <Value>../src/ASF/avr32/components/memory/sdram</Value>
+      <Value>../src</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/smc</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/sdramc</Value>
+      <Value>../src/ASF/avr32/drivers/gpio</Value>
+      <Value>../src/ASF/avr32/utils/preprocessor</Value>
+      <Value>../src/ASF/avr32/drivers/intc</Value>
+      <Value>../src/ASF/avr32/drivers/pm</Value>
+      <Value>../src/ASF/avr32/drivers/usart</Value>
+      <Value>../src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi</Value>
+      <Value>../src/ASF/avr32/drivers/spi</Value>
+      <Value>../src/ASF/avr32/services/fs/fat</Value>
+      <Value>../src/ASF/common/services/storage/ctrl_access</Value>
+      <Value>../src/ASF/avr32/drivers/adc</Value>
+      <Value>../src/ASF/avr32/drivers/tc</Value>
+    </ListValues>
+  </avr32gcc.compiler.directories.IncludePaths>
+  <avr32gcc.compiler.optimization.level>Optimize (-O1)</avr32gcc.compiler.optimization.level>
+  <avr32gcc.compiler.optimization.OtherFlags>-fdata-sections</avr32gcc.compiler.optimization.OtherFlags>
+  <avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>
+  <avr32gcc.compiler.optimization.DebugLevel>Maximum (-g3)</avr32gcc.compiler.optimization.DebugLevel>
+  <avr32gcc.compiler.warnings.AllWarnings>True</avr32gcc.compiler.warnings.AllWarnings>
+  <avr32gcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax -mno-cond-exec-before-reload</avr32gcc.compiler.miscellaneous.OtherFlags>
+  <avr32gcc.linker.general.DoNotUseStandardStartFiles>True</avr32gcc.linker.general.DoNotUseStandardStartFiles>
+  <avr32gcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avr32gcc.linker.libraries.Libraries>
+  <avr32gcc.linker.optimization.GarbageCollectUnusedSections>True</avr32gcc.linker.optimization.GarbageCollectUnusedSections>
+  <avr32gcc.linker.optimization.PutReadOnlyDataInWritableDataSection>True</avr32gcc.linker.optimization.PutReadOnlyDataInWritableDataSection>
+  <avr32gcc.linker.optimization.AllowDirectReferencesToDataSection>True</avr32gcc.linker.optimization.AllowDirectReferencesToDataSection>
+  <avr32gcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -T../src/ASF/thirdparty/ijg/example/at32uc3a0512_evk1105/link_uc3a0512_extsdram.lds -Wl,-e,_trampoline</avr32gcc.linker.miscellaneous.LinkerFlags>
+  <avr32gcc.assembler.general.AssemblerFlags>-mrelax</avr32gcc.assembler.general.AssemblerFlags>
+  <avr32gcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>../thirdparty/ijg/example</Value>
+      <Value>../src/ASF/avr32/utils</Value>
+      <Value>../src/ASF/avr32/drivers/cpu/cycle_counter</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/avr32/drivers/pwm</Value>
+      <Value>../src/ASF/avr32/boards</Value>
+      <Value>../src/ASF/avr32/components/display/et024006dhu</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/avr32/drivers/flashc</Value>
+      <Value>../src/ASF/thirdparty/ijg</Value>
+      <Value>../src/config</Value>
+      <Value>../src/ASF/avr32/boards/evk1105</Value>
+      <Value>../src/ASF/avr32/utils/debug</Value>
+      <Value>../src/ASF/avr32/components/memory/sdram</Value>
+      <Value>../src</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/smc</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/sdramc</Value>
+      <Value>../src/ASF/avr32/drivers/gpio</Value>
+      <Value>../src/ASF/avr32/utils/preprocessor</Value>
+      <Value>../src/ASF/avr32/drivers/intc</Value>
+      <Value>../src/ASF/avr32/drivers/pm</Value>
+      <Value>../src/ASF/avr32/drivers/usart</Value>
+      <Value>../src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi</Value>
+      <Value>../src/ASF/avr32/drivers/spi</Value>
+      <Value>../src/ASF/avr32/services/fs/fat</Value>
+      <Value>../src/ASF/common/services/storage/ctrl_access</Value>
+      <Value>../src/ASF/avr32/drivers/adc</Value>
+      <Value>../src/ASF/avr32/drivers/tc</Value>
+    </ListValues>
+  </avr32gcc.assembler.general.IncludePaths>
+  <avr32gcc.assembler.debugging.DebugLevel>Default (-g)</avr32gcc.assembler.debugging.DebugLevel>
+  <avr32gcc.preprocessingassembler.general.AssemblerFlags>-mrelax -DBOARD=EVK1105 -DSD_MMC_SPI_ENABLE -DACCESS_MEM_TO_RAM_ENABLED</avr32gcc.preprocessingassembler.general.AssemblerFlags>
+  <avr32gcc.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>../thirdparty/ijg/example</Value>
+      <Value>../src/ASF/avr32/utils</Value>
+      <Value>../src/ASF/avr32/drivers/cpu/cycle_counter</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/avr32/drivers/pwm</Value>
+      <Value>../src/ASF/avr32/boards</Value>
+      <Value>../src/ASF/avr32/components/display/et024006dhu</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/avr32/drivers/flashc</Value>
+      <Value>../src/ASF/thirdparty/ijg</Value>
+      <Value>../src/config</Value>
+      <Value>../src/ASF/avr32/boards/evk1105</Value>
+      <Value>../src/ASF/avr32/utils/debug</Value>
+      <Value>../src/ASF/avr32/components/memory/sdram</Value>
+      <Value>../src</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/smc</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/avr32/drivers/ebi/sdramc</Value>
+      <Value>../src/ASF/avr32/drivers/gpio</Value>
+      <Value>../src/ASF/avr32/utils/preprocessor</Value>
+      <Value>../src/ASF/avr32/drivers/intc</Value>
+      <Value>../src/ASF/avr32/drivers/pm</Value>
+      <Value>../src/ASF/avr32/drivers/usart</Value>
+      <Value>../src/ASF/avr32/components/memory/sd_mmc/sd_mmc_spi</Value>
+      <Value>../src/ASF/avr32/drivers/spi</Value>
+      <Value>../src/ASF/avr32/services/fs/fat</Value>
+      <Value>../src/ASF/common/services/storage/ctrl_access</Value>
+      <Value>../src/ASF/avr32/drivers/adc</Value>
+      <Value>../src/ASF/avr32/drivers/tc</Value>
+    </ListValues>
+  </avr32gcc.preprocessingassembler.general.IncludePaths>
+  <avr32gcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</avr32gcc.preprocessingassembler.debugging.DebugLevel>
+</Avr32Gcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\ASF\" />
+    <Folder Include="src\ASF\avr32\" />
+    <Folder Include="src\ASF\avr32\boards\" />
+    <Folder Include="src\ASF\avr32\boards\evk1105\" />
+    <Folder Include="src\ASF\avr32\components\" />
+    <Folder Include="src\ASF\avr32\components\display\" />
+    <Folder Include="src\ASF\avr32\components\display\et024006dhu\" />
+    <Folder Include="src\ASF\avr32\components\memory\" />
+    <Folder Include="src\ASF\avr32\components\memory\sdram\" />
+    <Folder Include="src\ASF\avr32\components\memory\sdram\mt48lc16m16a2tg7e\" />
+    <Folder Include="src\ASF\avr32\components\memory\sd_mmc\" />
+    <Folder Include="src\ASF\avr32\components\memory\sd_mmc\sd_mmc_spi\" />
+    <Folder Include="src\ASF\avr32\drivers\" />
+    <Folder Include="src\ASF\avr32\drivers\adc\" />
+    <Folder Include="src\ASF\avr32\drivers\cpu\" />
+    <Folder Include="src\ASF\avr32\drivers\cpu\cycle_counter\" />
+    <Folder Include="src\ASF\avr32\drivers\ebi\" />
+    <Folder Include="src\ASF\avr32\drivers\ebi\sdramc\" />
+    <Folder Include="src\ASF\avr32\drivers\ebi\smc\" />
+    <Folder Include="src\ASF\avr32\drivers\flashc\" />
+    <Folder Include="src\ASF\avr32\drivers\gpio\" />
+    <Folder Include="src\ASF\avr32\drivers\intc\" />
+    <Folder Include="src\ASF\avr32\drivers\pm\" />
+    <Folder Include="src\ASF\avr32\drivers\pwm\" />
+    <Folder Include="src\ASF\avr32\drivers\spi\" />
+    <Folder Include="src\ASF\avr32\drivers\tc\" />
+    <Folder Include="src\ASF\avr32\drivers\usart\" />
+    <Folder Include="src\ASF\avr32\services\" />
+    <Folder Include="src\ASF\avr32\services\fs\" />
+    <Folder Include="src\ASF\avr32\services\fs\fat\" />
+    <Folder Include="src\ASF\avr32\utils\" />
+    <Folder Include="src\ASF\avr32\utils\debug\" />
+    <Folder Include="src\ASF\avr32\utils\header_files\" />
+    <Folder Include="src\ASF\avr32\utils\make\" />
+    <Folder Include="src\ASF\avr32\utils\preprocessor\" />
+    <Folder Include="src\ASF\avr32\utils\startup\" />
+    <Folder Include="src\ASF\common\" />
+    <Folder Include="src\ASF\common\boards\" />
+    <Folder Include="src\ASF\common\services\" />
+    <Folder Include="src\ASF\common\services\clock\" />
+    <Folder Include="src\ASF\common\services\clock\uc3a0_a1\" />
+    <Folder Include="src\ASF\common\services\delay\" />
+    <Folder Include="src\ASF\common\services\storage\" />
+    <Folder Include="src\ASF\common\services\storage\ctrl_access\" />
+    <Folder Include="src\ASF\common\utils\" />
+    <Folder Include="src\ASF\common\utils\interrupt\" />
+    <Folder Include="src\ASF\thirdparty\" />
+    <Folder Include="src\ASF\thirdparty\ijg\" />
+    <Folder Include="src\ASF\thirdparty\ijg\docsrc\" />
+    <Folder Include="src\ASF\thirdparty\ijg\example\" />
+    <Folder Include="src\ASF\thirdparty\ijg\example\at32uc3a0512_evk1105\" />
+    <Folder Include="src\config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\ASF\avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\adc\adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\drivers\adc\adc.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\drivers\spi\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\tc\tc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\drivers\tc\tc.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\services\fs\fat\fat.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\storage\ctrl_access\ctrl_access.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\config\conf_access.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\storage\ctrl_access\ctrl_access.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_explorer.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\services\fs\fat\fat.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\services\fs\fat\fat_unusual.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\services\fs\fat\file.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\services\fs\fat\navigation.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\services\fs\fat\fs_com.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\services\fs\fat\file.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\services\fs\fat\navigation.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\drivers\spi\spi.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_sd_mmc_spi.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi_mem.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\components\memory\sd_mmc\sd_mmc_spi\sd_mmc_spi_mem.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\thirdparty\ijg\example\crt0.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\utils\make\Makefile.avr32.in">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\make\Makefile.avr32program.in">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\make\Makefile.batchisp.in">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\preprocessor\preprocessor.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\gpio\gpio.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\compiler.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\sysclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\ebi\sdramc\sdramc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\ebi\smc\smc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\delay\delay.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\boards\evk1105\evk1105.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\boards\evk1105\led.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\drivers\pwm\pwm.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\parts.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\preprocessor\tpaste.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\preprocessor\mrepeat.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\usart\usart.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\uc3a0_a1\pll.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\components\memory\sdram\mt48lc16m16a2tg7e\mt48lc16m16a2tg7e.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\boards\board.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\uc3a0_a1\genclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\cpu\cycle_counter\cycle_counter.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\ansi2knr.1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\change.log">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\cjpeg.1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\coderules.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\config.guess">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\config.sub">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\configure">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\djpeg.1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\example\at32uc3a0512_evk1105\link_uc3a0512_extsdram.lds">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\filelist.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\install-sh">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\install.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jchuff.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.bcc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.cfg">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.dj">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.mac">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.manx">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.mc6">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.sas">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.st">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.vc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.vms">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.wat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jmemdosa.asm">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jpegtran.1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jversion.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\status_codes.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jdct.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\docsrc\documentation.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jdhuff.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\libjpeg.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\license.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\ltconfig">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\ltmain.sh">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makcjpeg.st">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makdjpeg.st">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makeapps.ds">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\Makefile">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.ansi">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.bcc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.cfg">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.dj">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.manx">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.mc6">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.mms">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.sas">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.unix">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.vc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.vms">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makefile.wat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makelib.ds">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makeproj.mac">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makljpeg.st">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\maktjpeg.st">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\makvms.opt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\rdjpgcom.1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\README">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\structure.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\usage.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\wizard.doc">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\wrjpgcom.1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\conf_jpeg_decoder.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jmorecfg.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\pm\pm.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\jpegfile.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_et024006dhu.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_ebi.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\pm\power_clocks_lib.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\pll.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\boards\evk1105\led.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\components\display\et024006dhu\et024006dhu.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\common\services\clock\uc3a0_a1\sysclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\intc\intc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\components\display\et024006dhu\et024006dhu.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jconfig.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jpegint.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jpeglib.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\osc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\header_files\uc3d_defines_fix.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\cdjpeg.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\transupp.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\interrupt.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\components\display\et024006dhu\smc_et024006dhu.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\drivers\ebi\sdramc\sdramc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\ebi\smc\smc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\flashc\flashc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\avr32\utils\debug\print_funcs.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\cderror.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\genclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\interrupt\interrupt_avr32.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\header_files\uc3l3_l4_defines_fix.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\startup\trampoline_uc3.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jerror.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\ijg\jinclude.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\jpeg_decoder.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\pm\sleep.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_clock.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\utils\preprocessor\stringz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\avr32\drivers\flashc\flashc.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\avr32\drivers\gpio\gpio.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\intc\exception.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\intc\intc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\pm\pm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\pm\pm_conf_clocks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\pm\power_clocks_lib.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\pwm\pwm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\drivers\usart\usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\utils\debug\print_funcs.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\avr32\utils\startup\trampoline_uc3.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\common\services\clock\uc3a0_a1\osc.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\common\services\clock\uc3a0_a1\sysclk.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcapistd.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jccoefct.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jccolor.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcdctmgr.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jchuff.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcinit.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcmainct.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcmarker.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcmaster.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcomapi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcparam.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcphuff.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcprepct.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jcsample.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jctrans.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdapimin.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdapistd.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdcoefct.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdcolor.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jddctmgr.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdhuff.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdinput.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdmainct.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdmarker.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdmaster.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdmerge.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdphuff.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdpostct.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdsample.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jdtrans.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jerror.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jfdctflt.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jfdctfst.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jfdctint.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jidctflt.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jidctfst.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jidctint.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jidctred.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jmemmgr.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jmemnobs.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\thirdparty\ijg\jmemsys.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\thirdparty\ijg\jquant1.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jquant2.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\ijg\jutils.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ijg_example.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\jdatasrc.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
